@@ -334,8 +334,8 @@ fs.writeFileSync('./lib/rpg/healt.json', JSON.stringify(_healt))
 
 //Mess Dll
 mess = {
-limit: '📢 Limit Kamu Habis!', 
-wait: '⏳ Tunggu Sedang Di Proses',
+limit: '📢 Limit kamu telah habis', 
+wait: '⏳ Proses',
 eror: '❌ Error',
 success: '✅ Success',
 error: {
@@ -344,10 +344,10 @@ Iv: 'Link Invalid!'
 },
 only: {
 group: 'Fitur Hanya Bisa Di Gunakan Di Group',
-player: 'Khusus Orang Yang Join Rpg', 
+player: 'Hanya Orang Yang Join Rpg klik #joinrpg', 
 event: 'Event Belum Aktif Di Group ini!!',
-owner: 'Khusus Owner Ngab',
-admin: 'Khusus Admin Ngab',
+owner: 'Khusus Owner Bang',
+admin: 'Khusus Admin Bang',
 Badmin: 'Bot Harus Jadi Admin Kalo Mau Menggunakan Fiturnya', 
 }
 }
@@ -668,7 +668,7 @@ participant: `0@s.whatsapp.net`, ...(from ?
 },
 message: { 
 "videoMessage": { 
-"title": `Ryuuka Botz🐧`,
+"title": `ArulBotz`,
 "h": `${tampilUcapan} ${pushname}`,
 'duration': '99999', 
 'caption': `${tampilUcapan} ${pushname}`,
@@ -720,7 +720,7 @@ var _0x4e525e=_0x3faf;(function(_0x4c18e1,_0x1b4c3f){var _0x3a2e5b=_0x3faf,_0x50
 //Antilink
 if (isGroup && isAntiLink && !isOwner && !isGroupAdmins && isBotGroupAdmins){
 if (budy.match(/(https:\/\/chat.whatsapp.com)/gi)) {
-sendButMessage(from, ` *GROUP LINK DETECTED*\n\nMaaf Kamu Akan Di Kick Dari Group Ini!`, `Klik Di Bawah Untuk Mematikan`, [
+sendButMessage(from, ` *GROUP LINK DETECTED*\n\nLuh Bakalan Gw Kick Karena Sebarin Link Group`, `Klik Di Bawah Untuk Mematikan`, [
 {
 buttonId: `${prefix}antilink disable`,
 buttonText: {
@@ -1438,7 +1438,7 @@ Ryuu.updateProfileName(q)
 break
 case 'setbiobot':{
 if (!isOwner && !mek.key.fromMe) return reply(mess.only.owner) 
-if (args.length < 1) return reply(`Kirim perintah ${command} nama\n\nContoh : ${command} RyuuSih`)
+if (args.length < 1) return reply(`Kirim perintah ${command} nama\n\nContoh : ${command} ArulBotz`)
 Ryuu.setStatus(q)
 .then((res) => reply('Success'))
 .catch((err) => reply('Error'))
